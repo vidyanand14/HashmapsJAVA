@@ -3,11 +3,12 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        String str = "abcd";
-
-        StringReverser reverser = new StringReverser();
-        var result = reverser.reverse(str);
+        String str = "  (a + b)";
+        Expression exp = new Expression();
+        var result = exp.isBalanced(str);
         System.out.println(result);
+
+
 
     }
 }
