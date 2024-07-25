@@ -1,29 +1,19 @@
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.add(10);
-        queue.add(20);
-        queue.add(30);
-        System.out.println(queue);
-       // queue.add(40);
-        reverse(queue);
-        System.out.println(queue);
-
-    }
-
-    public static void reverse( Queue<Integer> queue) {
-        Stack<Integer> stack = new Stack<>();
-        while (!queue.isEmpty())
-            stack.push(queue.poll());
-        while (!stack.isEmpty())
-            queue.add(stack.pop());
+        Map<Integer,String> map = new HashMap<>();
+        map.put(1, "vidya");
+        map.put(2, "sid");
+        map.put(3, "neha");
+      //  System.out.println(map.get(2)); to get the object
+        System.out.println(map);
 
 
     }
-}
+
+
+
+
+    }
